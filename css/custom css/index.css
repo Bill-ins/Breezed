@@ -1,0 +1,1440 @@
+/* Applying Clearfix Technique */
+.clearFix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+/* ********************************************** Default Desktop Width ********************************************** */
+
+.jumpToTop {
+    position: fixed;
+    z-index: 30;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.jumpToTop a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #5fb759;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    color: white;
+    font-size: 30px;
+    padding-top: 9px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 300ms;
+}
+
+.jumpToTop a:hover {
+    background-color: white;
+    color: #5fb759;
+}
+
+.jumpToTop a:active {
+    background-color: white;
+    color: #5fb759;
+    box-shadow: none;
+}
+
+/* Website Header Starts Here */
+#customNav {
+    background: none;
+    border: none;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0px;
+    padding-top: 30px;
+    transition: 1000ms;
+    border-radius: 0;
+}
+
+#customNav .searchButtonMob {
+    border: 1px solid gray;
+    border-radius: 0;
+    background: lightgray;
+    color: #5fb759;
+    font-size: 20px;
+    float: right;
+    margin: 5px 3% 0 0;
+    display: none;
+}
+
+.bgChange {
+    background-color: white !important;
+    padding: 10px 0 !important;
+    box-shadow: 0 2px 7px rgba(128, 128, 128, 0.5);   
+}
+
+.bgChange a {
+    color: gray !important;
+}
+
+.bgChange a:hover {
+    color: #5fb759 !important;
+}
+
+.bgChange .active a {
+    color: #5fb759 !important;
+}
+
+/* For Testing */
+.bgChange .dropdown-menu li a {
+    color: gray !important;
+}
+.bgChange .dropdown-menu li a:hover, .bgChange .dropdown-menu .active a {
+    color: #5fb759 !important;
+}
+/* For Testing */
+
+#customNav .customBrand {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+#customNav li {
+    margin-left: 20px;
+}
+
+#customNav ul li:first-child {
+    margin: 0;
+}
+
+#customNav a {
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#customNav .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#customNav .open a {
+    color: black;
+}
+
+#customNav .open a:hover {
+    color: black;
+}
+
+#customNav .dropdown-menu li {
+    margin: 0;
+    margin-top: 10px;
+}
+
+#customNav .dropdown-menu a {
+    color: gray;
+}
+
+#customNav .dropdown-menu a:hover {
+    color: black;
+}
+
+#customNav a:hover {
+    color: lightgray;
+}
+
+#customNav .active a {
+    background: none;
+    color: lightgray;
+}
+
+#customNav .searchButton {
+    display: inline-block;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #5fb759;
+    border: none;
+}
+
+#customNav .searchButton:hover {
+    background-color: lightgray;
+}
+
+.searchWin {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.searchWin input {
+    display: block;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    text-align: center;
+    font-size: 50px;
+    color: lightgray;
+    clear: right;
+}
+
+.searchWin input:focus {
+    outline: none;
+    
+}
+
+.searchWin .green {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 35%;
+    border: 0;
+    background-color: #5fb759;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.searchWin .closeButton{
+    float: right;
+    height: 50px;
+    width: 50px;
+    background-color: #5fb759;
+    color: white;
+    border-radius: 100%;
+    border: none;
+    margin: 20px 20px 0 0;
+    font-size: 25px;
+}
+
+header .item {
+    height: 700px;
+    padding-top: 250px;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header .item1 {
+    background-image: url(../../img/slide-01.jpg);
+}
+
+header .item2 {
+    background-image: url(../../img/slide-02.jpg);
+}
+
+header .item3 {
+    background-image: url(../../img/slide-03.jpg);
+}
+
+header .item h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+header .item h1 {
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+header .item .buttons {
+    margin-top: 40px;
+    width: 100%;
+}
+
+header .item .buttons button {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition-duration: 500ms;
+}
+
+header .item .buttons .btn1 {
+    border: 2px solid white;
+    background: none;
+    margin-right: 20px;
+    color: white;
+}
+
+header .item .buttons .btn1:hover {
+    color: #5fb759;
+    background-color: white;
+}
+
+header .item .buttons .btn2 {
+    border: none;
+    background-color: white;
+    color: #5fb759;
+}
+
+header .item .buttons .btn2:hover {
+    background-color: #5fb759;
+    color: white;
+}
+
+header .carousel-control {
+    background: none !important;
+    opacity: 1;
+    z-index: 0;
+}
+
+header .down {
+    width: 100%;
+    text-align: center;
+}
+
+header .down a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #5fb759;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    color: white;
+    font-size: 30px;
+    padding-top: 14px;
+    position: relative;
+    top: -35px;
+}
+/* Website Header Ends Here */
+
+/* ................................................................................................................. */
+
+/* Website Body Starts Here */
+/* Section 1 Starts Here */
+#sec1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 5px solid whitesmoke;
+}
+
+#sec1 h4 {
+    font-size: 16px;
+    color: #5fb759;
+}
+
+#sec1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+#sec1 .headings {
+    margin-bottom: 40px;
+}
+
+#sec1 .icons .fa {
+    display: inline-block;
+    background: rgb(51,155,158);
+    background: linear-gradient(90deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
+    color: white;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+
+#sec1 .icons h3 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#sec1 .icons .marginTop {
+    margin-top: 30px;
+}
+
+#sec1 .learnMore {
+    margin-top: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #5fb759;
+    color: white;
+    font-size: 13px;
+    height: 45px;
+    width: 170px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* For Testing */
+#sec1 .learnMore {
+    transition: 500ms;
+}
+
+#sec1 .learnMore span{
+    transition: 500ms;
+}
+
+#sec1 .learnMore:hover {
+    width: 180px;
+}
+
+#sec1 .learnMore:hover span {
+    margin-left: 10px;
+}
+/* For Testing */
+
+#sec1 .paragraph p:first-child {
+    margin-top: 45px;
+}
+
+#sec1 .paragraph a {
+    text-decoration: none;
+}
+
+#sec1 .paragraph p {
+    margin-top: 30px;
+    font-size: 16px;
+    color: gray;
+    line-height: 28px;
+}
+/* Section 1 Ends Here */
+
+/* Section 2 Starts Here */
+#sec2 {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#sec2 .col {
+    padding: 0 20px;
+}
+
+#sec2 .icon {
+   float: left;
+   width: 25%; 
+   font-size: 50px;
+   background: rgb(51,155,158);
+   background: linear-gradient(0deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
+   -webkit-background-clip: text;
+   color: transparent;
+   position: relative;
+   top: -10px;
+}
+
+#sec2 .text {
+    float: right;
+    width: 75%;
+}
+
+#sec2 .text h3 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#sec2 .text p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    line-height: 24px;
+}
+
+#sec2 .text .learnMore {
+    transition: 500ms;
+    color: black;
+    font-size: 14px;
+    background: none;
+    border: none;
+    margin-top: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* For Testing */
+#sec2 .text .learnMore span {
+    transition: 500ms;
+}
+
+#sec2 .text .learnMore:hover {
+    color: #5fb759;
+}
+
+#sec2 .text .learnMore:hover span {
+    margin-left : 10px;
+}
+/* For Testing */
+/* Section 2 Ends Here */
+
+/* Section 3 Starts Here */
+#sec3 {
+    background-image: url(../../img/slide-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#sec3 .center {
+    max-width: 700px;
+    margin: 0 auto;
+    color:  white;
+}
+
+#sec3 h3 {
+    font-size: 15px;
+}
+
+#sec3 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+#sec3 p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 40px;
+}
+
+#sec3 form {
+    margin-top: 40px;
+}
+
+#sec3 input {
+    height: 40px;
+    border-radius: 50px;
+    font-size: 14px;
+    display: block;
+}
+
+#sec3 input[type=email] {
+    padding: 0 20px;
+    width: 65%;
+    float: left;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+#sec3 input[type=email]:focus {
+    outline: none;
+}
+
+#sec3 input[type=email]::placeholder {
+    color: white;
+}
+
+#sec3 input[type=submit] {
+    width: 30%;
+    float: right;
+    background-color: white;
+    border: none;
+    color: #5fb759;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition-duration: 500ms;
+}
+
+#sec3 input[type=submit]:hover {
+    background-color: #5fb759;
+    color: white;
+}
+/* Section 3 Ends Here */
+
+/* Section 4 Starts Here */
+#sec4 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#sec4 h4 {
+    font-size: 16px;
+    color: #5fb759;
+}
+
+#sec4 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+#sec4 .image {
+    width: 80%;
+    transition: 500ms;
+}
+
+#sec4 .image:hover {
+    opacity: 0.7;
+}
+
+#sec4 .marginTop, #sec4 .gallery {
+    margin-top: 50px;
+} 
+
+#sec4 .fullScreenImg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#sec4 .fullScreenImg img{
+    width: 90%;
+    max-width: 900px;
+    margin-top: 60px;
+}
+
+#sec4 .closeButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* display: block;   */
+    /* z-index: 20; */
+    height: 50px;
+    width: 50px;
+    background-color: #5fb759;
+    color: white;
+    border-radius: 100%;
+    border: none;
+    font-size: 25px;
+}
+/* Section 4 Ends Here */
+
+/* Section 5 Starts Here */
+#sec5 {
+    background-image: url(../../img/slide-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+#sec5 a {
+    text-decoration: none;
+    color: #5fb759;
+    background-color: white;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 18px;
+    border-radius: 100%;
+    padding-top: 5px;
+    transition: 300ms;
+}
+
+#sec5 a:hover {
+    background-color: #5fb759;
+    color: white;
+}
+
+#sec5 .headings h3 {
+    font-size: 15px;
+}
+
+#sec5 .headings h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+#sec5 .carouselRow {
+    margin-top: 50px;
+}
+
+#sec5 .carouselRow img {
+    width: 100%;
+}
+
+#sec5 .carouselRow .item {
+    width: 100%;
+}
+
+#sec5 .carouselRow .member {
+    position: relative;
+}
+
+#sec5 .carouselRow .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 180px;
+    opacity: 0;
+    transition: 300ms;
+}
+
+#sec5 .carouselRow .overlay a:first-child {
+    margin: 0;
+}
+
+#sec5 .carouselRow .overlay:hover {
+    opacity: 0.8;
+}
+ 
+#sec5 .carouselRow h3 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+ 
+#sec5 .carouselRow h4 {
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+ 
+#sec5 .carouselRow .owl-dots {
+    margin-top: 50px;
+}
+ 
+#sec5 .carouselRow .owl-dots .owl-dot span {
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    transition: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    transform: scale(1.4);
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #5fb759 !important;
+}
+/* Section 5 Ends Here */
+
+/* Section 6 Starts Here */
+#sec6 {
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-image: url(../../img/dotted-map-bg.png);
+    background-position: center center;
+    margin-top: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#sec6 h4 {
+    font-size: 16px;
+    color: #5fb759;
+}
+
+#sec6 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+#sec6 .contact {
+    margin-top: 50px;
+}
+
+#sec6 .contact h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+#sec6 .contact .fa {
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding-top: 12px;
+    color: white;
+    margin-right: 20px;
+}
+
+#sec6 .marginTop {
+    margin-top: 30px;
+}
+
+#sec6 form {
+    margin-top: 50px;
+}
+
+#sec6 form input {
+    border-radius: 0;
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    color: gray;
+    font-weight: 500;
+}
+
+#sec6 form textarea {
+    border-radius: 0;
+    border: 1px solid lightgray;
+    resize: none;
+    height: 150px;
+    color: gray;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#sec6 form .col {
+    margin-bottom: 30px;
+}
+
+#sec6 form button {
+    border-radius: 50px;
+    border: none;
+    background-color: #5fb759;
+    color: white;
+    height: 45px;
+    width: 230px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: 500ms;
+    margin-top: 10px;
+}
+
+/* For Testing */
+#sec6 form button span {
+    transition: 500ms;
+}
+
+#sec6 form button:hover {
+    width: 240px;
+}
+
+#sec6 form button:hover span {
+    margin-left: 10px;
+}
+/* For Testing */
+/* Section 6 Ends Here */
+/* Website Body Ends Here */
+
+/* ................................................................................................................. */
+
+/* Website Footer Starts Here */
+footer {
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(90deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
+    color: white;
+    font-size: 14px;
+}
+
+footer .social {
+    text-align: right;
+    font-weight: 600;
+}
+
+footer .social a {
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    color: #5fb759;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 6px;
+    border-radius: 100%;
+    margin-left: 10px;
+    transition: 500ms;
+}
+
+footer .social a:hover {
+    background-color: #5fb759;
+    color: white;
+}
+/* Website Footer Ends Here */
+
+
+
+/* ********************************************** Media Queries ********************************************** */
+
+/* Media Queries For Tablet Devices */
+@media only screen and (max-width: 1100px) {
+
+    .jumpToTop a:hover {
+        background-color: #5fb759;
+        color: white;
+    }
+
+    .jumpToTop a:active {
+        background-color: white;
+        color: #5fb759;
+        box-shadow: none;
+    }
+    
+    /* Website Header Starts Here #_Tablet_Devices */
+    #customNav a {
+        font-size: 15px;
+    }
+
+    #customNav .customBrand {
+        font-size: 25px;
+    }
+
+    #customNav li {
+        margin-left: 0px;
+    }
+
+    #customNav .searchButton {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+
+    .searchWin input {
+        top: 20%;
+        font-size: 30px;
+        width: 90%;
+        max-width: 600px;
+    }
+    /* Website Header Ends Here #_Tablet_Devices */
+
+    /* Website Body Starts Here #_Tablet_Devices */
+    /* Section 1 Starts Here #_Tablet_Devices */
+    #sec1 h4, #sec1 h2, #sec1 .buttonRow {
+        text-align: center;
+    }
+
+    #sec1 h3 {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    #sec1 .paragraph p:first-child {
+        margin-top: 70px;
+    }
+    /* Section 1 Ends Here #_Tablet_Devices */
+
+    /* Section 2 Starts Here #_Tablet_Devices */
+    #sec2 .col {
+        margin-top: 60px;
+    }
+
+    #sec2 .col:first-child {
+        margin: 0;
+    }
+
+    #sec2 .box {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    /* Section 2 Ends Here #_Tablet_Devices */
+
+    /* Section 3 Starts Here #_Tablet_Devices */
+    /* Section 3 Ends Here #_Tablet_Devices */
+
+    /* Section 4 Starts Here #_Tablet_Devices */
+    #sec4 .marginTopTab {
+        margin-top: 50px;
+    }
+
+    #sec4 .image {
+        max-width: 300px;    
+    }
+
+    #sec4 .fullScreenImg img{
+        width: 90%;
+        max-width: 900px;
+        margin-top: 80px;
+    }
+
+    #sec4 .closeButton{              
+        top: 10px;
+        right: 10px;        
+    }
+    /* Section 4 Ends Here #_Tablet_Devices */
+
+    /* Section 5 Starts Here #_Tablet_Devices */
+    #sec5 .owl-carousel {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    #sec5 .carouselRow .overlay {
+        position: static;
+        opacity: 1;
+        padding: 20px 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #sec5 .carouselRow .overlay a {
+        margin-left: 10%;
+    }
+
+    #sec5 .carouselRow .overlay:hover {
+        opacity: 1;
+    }
+    /* Section 5 Ends Here #_Tablet_Devices */
+
+    /* Section 6 Starts Here #_Tablet_Devices */
+    #sec6 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        /* background-size: contain; */
+    }
+
+    #sec6 .contact {
+        max-width: 222px;
+        margin: 30px auto 0;
+        font-size: 15px;
+    }
+
+    #sec6 h4, #sec6 h2 {
+        text-align: center;
+    }
+
+    #sec6 .submitButton {
+        text-align: center;
+    }
+    /* Section 6 Ends Here #_Tablet_Devices */
+    /* Website Body Ends Here #_Tablet_Devices */
+
+    /* Website Footer Starts Here #_Tablet_Devices */
+    footer, footer .social {
+        text-align: center;
+    }
+
+    footer .social {
+        margin-top: 40px;
+    }
+    /* Website Footer Ends Here #_Tablet_Devices */
+}
+
+
+/* Media Queries For Mobile Devices */
+@media only screen and (max-width: 767px) {
+
+    .jumpToTop a {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        padding-top: 7px;
+    }
+
+    /* Website Header Starts Here #_Mobile_Devices */
+    #customNav {
+        background-color: white;
+        padding: 10px 0;
+        color: gray;
+        position: absolute;
+        padding-bottom: 0;
+        transition: none;
+    }
+
+    .bgChange {
+        padding-bottom: 0 !important;   
+    }
+
+    #customNav a {
+        color: gray;
+    } 
+
+    #customNav .customBrand {
+        padding-right: 0;
+        color: #5fb759;
+    }
+
+    #customNav .searchButton {
+        display: none;
+    } 
+
+    #customNav .searchButtonMob {
+        display: inline-block;
+    } 
+
+    .searchWin input {
+        top: 10%;
+        font-size: 20px;
+        max-width: 400px;
+    }
+
+    .searchWin .green {
+        top: 20%;
+        font-size: 15px;
+        width: 90%;
+        height: 30px;
+        max-width: 400px;
+    }
+
+    .searchWin .closeButton{
+        height: 35px;
+        width: 35px;
+        font-size: 25px;
+    }
+
+    #customNav .navbar-toggle {
+        border: none;
+        background: none;
+    }
+
+    #customNav .navbar-toggle span {
+        background-color: gray;
+        height: 3px;
+        width: 30px;
+    }
+
+    #customNav .navbar-collapse {
+        border-width: 2px;
+        border-color: gray;
+    }
+
+    #customNav .navbar-header {
+        margin-bottom: 10px;
+    }
+
+    #customNav ul li {
+        margin-left: 20px !important;
+    }
+
+    #customNav ul li a {
+        color: gray;
+    }
+
+    #customNav ul li a:hover {
+        color: gray;
+    }
+
+    #customNav ul .active a {
+        color: #5fb759;
+    }
+
+    #customNav ul .active a:hover {
+        color: #5fb759;
+    }
+
+    header .item {
+        padding-top: 170px;
+        height: 500px;
+    }
+
+    header .item h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    header .item h1 {
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 3px;
+    }
+
+    header .item .buttons {
+        max-width: 250px;
+        margin: 20px auto 0;
+    }
+
+    header .item .buttons button {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    header .item .buttons .btn2 {
+        margin-top: 20px;
+    }
+
+    header .down a {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        padding-top: 7px;
+        top: -25px;
+    }
+    /* Website Header Ends Here #_Mobile_Devices */
+
+    /* Website Body Starts Here #_Mobile_Devices */
+    /* Section 1 Starts Here #_Mobile_Devices */
+    #sec1 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #sec1 h4 {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    #sec1 h2 {
+        font-size: 25px;
+    }
+
+    #sec1 .headings {
+        margin-bottom: 10px;
+    }
+
+    #sec1 .icons h3 {
+        margin-top: 30px !important;
+        font-size: 13px;
+    }
+    
+    #sec1 .learnMore {
+        height: 40px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /* For Testing */
+    #sec1 .learnMore:hover {
+        width: 100%;
+    }
+
+    #sec1 .learnMore:hover span {
+        margin-left: 0px;
+    }
+    /* For Testing */
+
+    #sec1 .paragraph p {
+        font-size: 13px;
+        line-height: 23px;
+        margin-top: 25px;
+    }
+    /* Section 1 Ends Here #_Mobile_Devices */
+
+    /* Section 2 Starts Here #_Mobile_Devices */
+    #sec2 {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    
+    #sec2 .col {
+        margin-top: 40px;
+    }
+
+    #sec2 .box {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #sec2 .icon {
+        float: none;
+        top: 0px;
+        width: 100%;
+    }
+     
+    #sec2 .text {
+        float: none;
+        width: 100%;
+    }
+    
+    #sec2 .text h3 {
+        font-size: 15px;
+    }
+
+    #sec2 .text p {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    #sec2 .text .learnMore {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    /* Section 2 Ends Here #_Mobile_Devices */
+
+    /* Section 3 Starts Here #_Mobile_Devices */
+    #sec3 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #sec3 .center {
+        max-width: 400px;
+    }
+
+    #sec3 h3 {
+        font-size: 14px;
+    }
+    
+    #sec3 h2 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    #sec3 p {
+        font-size: 13px;
+        line-height: 23px;
+        margin-top: 30px;
+    }
+    
+    #sec3 form {
+        margin-top: 30px;
+    }
+
+    #sec3 input {
+        width: 100% !important;
+        height: 35px;
+        font-size: 13px;
+        float: none !important;
+    }
+
+    #sec3 input[type=submit] {
+        margin-top: 20px;
+    }
+    /* Section 3 Ends Here #_Mobile_Devices */
+
+    /* Section 4 Starts Here #_Mobile_Devices */
+    #sec4 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #sec4 h4 {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    #sec4 h2 {
+        font-size: 25px;
+    }
+
+    #sec4 .marginTopMob {
+        margin-top: 30px;
+    } 
+
+    #sec4 .closeButton{
+        height: 35px;
+        width: 35px;
+    }
+    /* Section 4 Ends Here #_Mobile_Devices */
+
+    /* Section 5 Starts Here #_Mobile_Devices */
+    #sec5 {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    #sec5 .headings h3 {
+        font-size: 14px;
+    }
+
+    #sec5 .headings h2 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    #sec5 .owl-carousel {
+        max-width: 375px;
+    }
+
+    #sec5 .carouselRow h3 {
+        font-size: 16px;
+    }
+
+    #sec5 .carouselRow h4 {
+        font-size: 14px;
+    }
+
+    #sec5 .carouselRow .owl-dots {
+        margin-top: 30px;
+    }
+    /* Section 5 Ends Here #_Mobile_Devices */
+
+    /* Section 6 Starts Here #_Mobile_Devices */
+    #sec6 {
+        margin-top: 80px;
+    }
+
+    #sec6 h4 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    #sec6 h2 {
+        font-size: 25px;
+    }
+
+    #sec6 .marginTop {
+        margin-top: 20px;
+    }
+
+    #sec6 form {
+        max-width: 375px;
+        margin: 40px auto 0;
+    }
+
+    #sec6 form input {
+        height: 40px;
+    }
+
+    #sec6 form button {
+        width: 100%;
+        height: 40px;
+    }
+    
+    /* For Testing */
+    #sec6 form button:hover {
+        width: 100%;
+    }
+    
+    #sec6 form button:hover span {
+        margin-left: 0px;
+    }
+    /* For Testing */
+    /* Section 6 Ends Here #_Mobile_Devices */
+    /* Website Body Ends Here #_Mobile_Devices */
+
+    /* Website Footer Starts Here #_Mobile_Devices */
+    footer {
+        font-size: 13px;
+        margin-top: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    footer .social {
+        font-size: 14;
+    }
+
+    footer .social a {
+        display: block;
+        margin: 20px auto 0;
+    }
+    /* Website Footer Ends Here #_Mobile_Devices */
+}
